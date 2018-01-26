@@ -1,0 +1,21 @@
+{
+  "name": "tune/AbstractFactory",
+  "description": "Tune, learning by plaing",
+  "license": "MIT",
+  "keywords": ["tune"],
+  "authors": [
+    {
+      "name": "Tune",
+      "email": "tunello@gmail.com"
+    }
+  ],
+  "require": {},
+  "require-dev": {
+    "phpunit/phpunit": "4.0.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "tune\\AbstractFactory\\": "tune/AbstractFactory/src/"
+    }
+  }
+}
