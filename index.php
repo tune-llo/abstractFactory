@@ -5,12 +5,12 @@ require_once 'vendor/autoload.php';
 print '<h1>Abstract factory</h1>';
 print '<hr>';
 
-// Unità irochesi
+// Unità irochesi.
 $iroBarrack = new \tune\AbstractFactory\barracks\IroquisBarrack();
 $aenna = $iroBarrack->createSoldier('Aenna');
 $tomahawk = $iroBarrack->createSoldier('Tomahawk');
 
-// Unità spagnole
+// Unità spagnole.
 $spainBarrack = new \tune\AbstractFactory\barracks\SpanishBarrack();
 $rodelero = $spainBarrack->createSoldier('Rodelero');
 

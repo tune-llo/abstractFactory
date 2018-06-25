@@ -7,9 +7,11 @@ use tune\AbstractFactory\soldiers\SpanishSoldier;
 
 class SpanishBarrack extends AbstractBarrack {
 
-    const population_name = 'Spagnoli';
+    public function __construct() {
+        parent::__construct('Spagnoli');
+    }
     
     public function createSoldier($soldier_name): AbstractSoldier {
-        return new SpanishSoldier('Rodelero', self::population_name);
+        return new SpanishSoldier('Rodelero', $this->getPopulationName());
     }
 }

@@ -20,8 +20,7 @@ class AbstractSoldier {
         $this->population = $soldier_population;
     }
 
-    public function __toString()
-    {
+    public function __toString() {
         $pattern = 'To string per l\'unità <strong>%s</strong> della popolazione <strong>%s</strong>';
         return sprintf(
             $pattern,
